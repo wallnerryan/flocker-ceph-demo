@@ -110,7 +110,7 @@ vagrant ssh ceph4 -c "sudo docker run --volume-driver flocker \
    -v test:/data --name test-container -itd busybox"
 
 wait
-p " # our volume and container are no longer on `ceph3`
+p " # our volume and container are no longer on `ceph3`"
 p "vagrant ssh ceph3 -c 'sudo docker ps'"
 p "vagrant ssh ceph3 -c 'sudo df -h | grep flocker'"
 
