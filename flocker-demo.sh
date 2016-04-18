@@ -115,7 +115,7 @@ p "vagrant ssh ceph3 -c 'sudo docker ps'"
 p "vagrant ssh ceph3 -c 'sudo df -h | grep flocker'"
 
 wait
-p " # We can see it is not present on `ceph4`
+p " # We can see it is not present on `ceph4`"
 p "vagrant ssh ceph4 -c 'sudo docker ps'"
 vagrant ssh ceph4 -c "sudo docker ps"
 
